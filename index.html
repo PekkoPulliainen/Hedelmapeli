@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Hedelmäpeli</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hedelmäpeli</h1>
+    </header>
+    <div class="container">
+      <div class="left-Side-Div">
+        <div class="bet-Div">
+          <p class="money-Display" id="money-Display">Rahaa: 50€</p>
+          <p class="bet-Display" id="bet-Display">Panos: 1€</p>
+          <div class="button-Container">
+            <button onclick="betAmount1()" class="bet-button" id="bet-button-1">
+              <img src="img/coin.png" class="coin-img" />
+              1€
+            </button>
+            <button onclick="betAmount2()" class="bet-button" id="bet-button-2">
+              <img src="img/coin.png" class="coin-img" />
+              2€
+            </button>
+            <button onclick="betAmount3()" class="bet-button" id="bet-button-3">
+              <img src="img/coin.png" class="coin-img" />
+              3€
+            </button>
+          </div>
+        </div>
+
+        <div class="fruit-Icons-Div">
+          <img class="apple-Icon" id="rollIcon1" src="img/apple.png" />
+          <img
+            class="watermelon-Icon"
+            id="rollIcon2"
+            src="img/watermelon.png"
+          />
+          <img class="pear-Icon" id="rollIcon3" src="img/pear.png" />
+          <img class="cherry-Icon" id="rollIcon4" src="img/cherry.png" />
+        </div>
+        <div class="lock-Icons-Div">
+          <button onclick="lock1()">
+            <img class="lock-Icon" id="lock-1" src="img/unlock.jpg" />
+          </button>
+          <button onclick="lock2()">
+            <img class="lock-Icon" id="lock-2" src="img/unlock.jpg" />
+          </button>
+          <button onclick="lock3()">
+            <img class="lock-Icon" id="lock-3" src="img/unlock.jpg" />
+          </button>
+          <button onclick="lock4()">
+            <img class="lock-Icon" id="lock-4" src="img/unlock.jpg" />
+          </button>
+        </div>
+        <h2 class="prize-Text" id="prize-Text"></h2>
+      </div>
+      <div class="right-Side-Div">
+        <div class="fruit-Prize-Prices-Div">
+          <img class="prizes-img" src="img/prizes.jpg" />
+        </div>
+        <div class="play-Button-Div">
+          <button onclick="play()" class="play-Button">Play</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
